@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+
+	<h1> Grades </h1>
+<div class="container">
+	<div class="row">
+
+{% for i in grades %}
+    <div class="col-md-4">	
+	<img src="{{ i.image }}" alt="{{ i.name }}"/>
+	<p>Name: {{ i.name }}</p>
+  	<p>Subject: {{ i.subject }} </p>  
+	<p>Marks: {{ i.marks }}</p>	
+	<p>Status: {{ i.status }}</p> 
+    <p>Remarks: {{ i.remarks }}</p>  <br>
+	</div>
+{% endfor %}
+</div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+<center>
+	<h1> Courses offered are </h1>
+
+{% for c in courses %}
+{{ c.id }} <br>
+{{ c.name }} <br>
+{{ c.LTPS }} <br> 
+{{ c.credits }} <br> <br>
+
+{% endfor %}
+
+
+</center>
+
+{% endblock %}
