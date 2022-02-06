@@ -4,7 +4,7 @@ from flask import Flask, render_template, request, session, redirect, url_for
 
 app = Flask(__name__)
 
-app.secret_key='9182592009'
+app.secret_key='12345678'
 
 courses = [
 {
